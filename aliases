@@ -1,8 +1,30 @@
-# Unix
+# Unix shorthand
 alias c="clear"
-alias ll="ls -al"
+h=history
+hs='history | grep'
+
+# Shortcuts for listing files
+l='ls -lah'
+la='ls -lAh'
+ll='ls -al'
+ls='ls --color=tty'
+lsa='ls -lah'
+
+# Shortcuts for changing directories
 alias home='cd ~'
 alias root='cd /'
+alias workspace='cd ~/workspace'
+
+# Python
+pyfind='find . -name "*.py"'
+pygrep='grep -nr --include="*.py"'
+
+# pre-commit
+prc=pre-commit
+prcau='pre-commit autoupdate'
+prcr='pre-commit run'
+prcra='pre-commit run --all-files'
+prcrf='pre-commit run --files'
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
