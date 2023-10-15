@@ -17,6 +17,7 @@ alias dotfiles='cd ~/dotfiles'
 # Command history
 alias h=history
 alias hs='history | grep'
+hsi='history | grep -i'
 
 # grep
 alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn,.idea,.tox}'
