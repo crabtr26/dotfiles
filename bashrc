@@ -59,9 +59,6 @@ if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
 fi
 
 # If /commandhistory folder exists, store command history files there
-if [ -d /commandhistory ]; then
+if [ -f /commandhistory/.bash_history ]; then
     export HISTFILE=/commandhistory/.bash_history
 fi
-
-# Write history to file every time a command is entered
-PROMPT_COMMAND="$PROMPT_COMMAND; history -a"

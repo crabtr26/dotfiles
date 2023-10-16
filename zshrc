@@ -109,9 +109,7 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
  # If /commandhistory folder exists, store command history files there
- if [ -d /commandhistory ]; then
+ if [ -f /commandhistory/.zsh_history ]; then
      export HISTFILE=/commandhistory/.zsh_history
  fi
 
- # Write history to file every time a command is entered
- PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
