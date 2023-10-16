@@ -1,18 +1,25 @@
 # Unix shorthand
 alias c="clear"
 
-# Listing files
+# List files
 alias l='ls -lah'
 alias la='ls -lAh'
 alias ll='ls -al'
 alias ls='ls --color=tty'
 alias lsa='ls -lah'
 
-# Changing directories
+# Change directories
 alias home='cd ~'
 alias root='cd /'
 alias workspace='cd ~/workspace'
+alias projects='cd ~/projects'
 alias dotfiles='cd ~/dotfiles'
+
+# Edit rc files
+alias aliases='vim ~/.aliases'
+alias bashrc='vim ~/.bashrc'
+alias zshrc='vim ~/.zshrc'
+alias vimrc='vim ~/.vimrc'
 
 # Command history
 alias h=history
