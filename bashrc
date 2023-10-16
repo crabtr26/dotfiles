@@ -57,3 +57,11 @@ function _update_ps1() {
 if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
+
+# If /commandhistory folder exists, store command history files there
+if [ -d /commandhistory ]; then
+    export HISTFILE=/commandhistory/.bash_history
+fi
+
+# Write history to file every time a command is entered
+PROMPT_COMMAND="$PROMPT_COMMAND; history -a"
