@@ -44,7 +44,7 @@ fi
 
 # Fancy Prompt. Source - https://github.com/justjanne/powerline-go#bash
 function _update_ps1() {
-    PS1="$($GOPATH/bin/powerline-go -error $? -jobs $(jobs -p | wc -l))"
+    PS1="$($GOPATH/bin/powerline-go -error $? -jobs $(jobs -p | wc -l) -modules venv,cwd,git,hg,jobs,exit)"
 
     # Uncomment the following line to automatically clear errors after showing
     # them once. This not only clears the error for powerline-go, but also for
