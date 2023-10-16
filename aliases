@@ -5,7 +5,7 @@ alias c="clear"
 alias l='ls -lah'
 alias la='ls -lAh'
 alias ll='ls -al'
-alias ls='ls --color=tty'
+alias ls='ls --color=auto'
 alias lsa='ls -lah'
 
 # Change directories
