@@ -68,7 +68,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(git git git-auto-fetch git-commit git-prompt gitfast docker history poetry pre-commit python tmux zsh-interactive-cd zsh-autosuggestions zsh-syntax-highlighting)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-auto-fetch git-commit gitfast docker history poetry pre-commit python tmux zsh-interactive-cd zsh-autosuggestions zsh-syntax-highlighting colorize z aliases dirhistory copybuffer copyfile copypath)
+plugins=(aliases copybuffer copyfile copypath dirhistory docker git gitfast git-auto-fetch git-commit history poetry pre-commit python tmux z zsh-interactive-cd zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
