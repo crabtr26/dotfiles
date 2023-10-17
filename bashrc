@@ -31,6 +31,9 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# Add binaries from ~/.bin to the PATH
+export PATH=$PATH:~/.bin
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).

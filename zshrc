@@ -105,6 +105,9 @@ if [ -f ~/.aliases ]; then
     . ~/.aliases
 fi
 
+# Add binaries from ~/.bin to the PATH
+export PATH=$PATH:~/.bin
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
