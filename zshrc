@@ -108,16 +108,20 @@ fi
 # Add binaries from ~/.bin to the PATH
 export PATH=$PATH:~/.bin
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Add binaries from ~/.local/bin to the PATH.
+# Required for poetry.
+export PATH=$PATH:~/.local/bin
+
+# Add go binaries to the PATH
+export PATH=$PATH:/usr/local/go/bin
+
+# Set GOPATH
+export GOPATH=$HOME/go
 
  # If /commandhistory folder exists, store command history files there
  if [ -f /commandhistory/.zsh_history ]; then
      export HISTFILE=/commandhistory/.zsh_history
  fi
 
- # Add go binaries to the PATH
- export PATH=$PATH:/usr/local/go/bin
-
- # Set GOPATH
- export GOPATH=$HOME/go
+# To customize prompt, run `p10k configure` or edit ~/dotfiles/p10k.zsh.
+[[ ! -f ~/dotfiles/p10k.zsh ]] || source ~/dotfiles/p10k.zsh

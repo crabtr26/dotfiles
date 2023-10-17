@@ -34,6 +34,16 @@ fi
 # Add binaries from ~/.bin to the PATH
 export PATH=$PATH:~/.bin
 
+# Add binaries from ~/.local/bin to the PATH.
+# Required for poetry.
+export PATH=$PATH:~/.local/bin
+
+# Add go binaries to the PATH
+export PATH=$PATH:/usr/local/go/bin
+
+# Set GOPATH
+export GOPATH=$HOME/go
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -44,12 +54,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-# Add go binaries to the PATH
- export PATH=$PATH:/usr/local/go/bin
-
- # Set GOPATH
- export GOPATH=$HOME/go
 
 # Fancy Prompt. Source - https://github.com/justjanne/powerline-go#bash
 function _update_ps1() {
