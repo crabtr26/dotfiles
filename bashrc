@@ -62,3 +62,9 @@ fi
 if [ -f /commandhistory/.bash_history ]; then
     export HISTFILE=/commandhistory/.bash_history
 fi
+
+# Add go binaries to the PATH
+ export PATH=$PATH:/usr/local/go/bin
+
+ # Set GOPATH
+ export GOPATH=$HOME/go

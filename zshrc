@@ -113,3 +113,8 @@ fi
      export HISTFILE=/commandhistory/.zsh_history
  fi
 
+ # Add go binaries to the PATH
+ export PATH=$PATH:/usr/local/go/bin
+
+ # Set GOPATH
+ export GOPATH=$HOME/go
