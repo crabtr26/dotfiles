@@ -14,6 +14,7 @@ alias root='cd /'
 alias workspace='cd ~/workspace'
 alias projects='cd ~/projects'
 alias dotfiles='cd ~/dotfiles'
+alias bin='cd ~/.bin'
 
 # Edit rc files
 alias aliases='vim ~/.aliases'
