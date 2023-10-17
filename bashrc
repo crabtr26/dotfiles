@@ -45,6 +45,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Add go binaries to the PATH
+ export PATH=$PATH:/usr/local/go/bin
+
+ # Set GOPATH
+ export GOPATH=$HOME/go
+
 # Fancy Prompt. Source - https://github.com/justjanne/powerline-go#bash
 function _update_ps1() {
     PS1="$($GOPATH/bin/powerline-go -error $? -jobs $(jobs -p | wc -l) -modules venv,cwd,git,hg,jobs,exit)"
@@ -65,9 +71,3 @@ fi
 if [ -f /commandhistory/.bash_history ]; then
     export HISTFILE=/commandhistory/.bash_history
 fi
-
-# Add go binaries to the PATH
- export PATH=$PATH:/usr/local/go/bin
-
- # Set GOPATH
- export GOPATH=$HOME/go
