@@ -1,5 +1,6 @@
 # Unix shorthand
 alias c="clear"
+alias bat='batcat'
 
 # List files
 alias l='ls -lah'
