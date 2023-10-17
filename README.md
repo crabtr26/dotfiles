@@ -1,29 +1,54 @@
-# thoughtbot dotfiles
+# Jacob's dotfiles
 
-![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
+Inspired by - https://github.com/thoughtbot/dotfiles.
 
 ## Requirements
+
+Install go:
+
+    wget https://go.dev/dl/go1.21.3.darwin-arm64.pkg && \
+    sudo rm -rf /usr/local/go && \
+    sudo tar -C /usr/local -xzf go1.21.3.linux-amd64.tar.gz
+
+Install [powerline-go](https://github.com/justjanne/powerline-go) for the bash prompt:
+
+    go install github.com/justjanne/powerline-go@latest
+
+Install system dependencies:
+
+    sudo apt-get install \
+        fzf \
+        xclip \
+        tmux \
+        vim \
+        zsh
 
 Set zsh as your login shell:
 
     chsh -s $(which zsh)
 
+Install [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh/):
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) and [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) plugins:
+
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && \
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 ## Install
 
 Clone onto your laptop:
 
-    git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
-
-(Or, [fork and keep your fork
-updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
+    git clone https://github.com/crabtr26/dotfiles ~/dotfiles
 
 Install [rcm](https://github.com/thoughtbot/rcm):
 
-    brew install rcm
+    sudo apt-get install rcm 
 
 Install the dotfiles:
 
-    env RCRC=$HOME/dotfiles/rcrc rcup
+    RCRC=$HOME/dotfiles/rcrc rcup
 
 After the initial installation, you can run `rcup` without the one-time variable
 `RCRC` being set (`rcup` will symlink the repo's `rcrc` to `~/.rcrc` for future
