@@ -239,6 +239,9 @@ alias gwtls='git worktree list'
 alias gwtmv='git worktree move'
 alias gwtrm='git worktree remove'
 
+# Custom binaries
+alias cb='clear-local-branches'
+
 # Include custom aliases
 if [[ -f ~/.aliases.local ]]; then
   source ~/.aliases.local
