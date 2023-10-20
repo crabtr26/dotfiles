@@ -116,7 +116,7 @@ export PATH=$PATH:~/.local/bin
 export PATH=$PATH:/usr/local/go/bin
 
 # Set GOPATH
-export GOPATH=$HOME/go
+export GOPATH=/go
 
  # If /commandhistory folder exists, store command history files there
  if [ -f /commandhistory/.zsh_history ]; then
