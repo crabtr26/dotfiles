@@ -13,6 +13,9 @@ alias bat='batcat'
  alias t='exa --tree --level 2'
  alias lt='exa --tree'
 
+ # Clickhouse client
+ alias clk='clickhouse-client'
+
 # Change directories
 alias home='cd ~'
 alias root='cd /'
