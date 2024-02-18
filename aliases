@@ -2,12 +2,15 @@
 alias c="clear"
 alias bat='batcat'
 
-# List files
-alias l='ls -lah'
-alias la='ls -lAh'
-alias ll='ls -al'
-alias ls='ls --color=auto'
-alias lsa='ls -lah'
+ # List files
+ alias l='exa -lbFh --git'
+ alias la='exa -lah --git'
+ alias ll='exa -lah --git'
+ alias ls='exa --git'
+ alias lsa='exa -lah --git'
+ 
+ # List file tree
+ alias t='exa --tree'
 
 # Change directories
 alias home='cd ~'
