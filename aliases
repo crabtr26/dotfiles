@@ -10,7 +10,8 @@ alias bat='batcat'
  alias lsa='exa -lah --git'
  
  # List file tree
- alias t='exa --tree'
+ alias t='exa --tree --level 2'
+ alias lt='exa --tree'
 
 # Change directories
 alias home='cd ~'
